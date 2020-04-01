@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Arvind Venkatesan</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .main{
+            background: linear-gradient(132deg,#16222A,#3A6073, #6dd5ed);
+            background-size: 400% 400%;
+            animation: BackgroundGradient 30s ease infinite;
+            height:1000px;
+        }
+
+        @keyframes BackgroundGradient  {
+            0% {background-position:0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position:0% 50%;}
+        }
+        .title {
+            text-align :center;
+            margin-top: 15%;
+            font-size: 70px;
+        }
+        ul {
+            
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:transparent;
+            
+            
+        }
+
+        li {
+            
+            font-size: 20px;
+        }
+
+        a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+            
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        a:hover {
+            background-color: transparent;
+            text-decoration: none;
+            color:lightgray;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:15%;
+        }
+        .profileImg {
+            height:auto;
+            width:40%;
+            float:left;
+            margin-left: 100px
+        }
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+        .feature {
+            border-right: solid 3px rgba(0,255,0,.75);
+            white-space: nowrap;
+            overflow: hidden;    
+            font-family: 'Source Code Pro', monospace;  
+            font-size: 28px;
+            color: rgba(255,255,255,.70);
+            margin: 0 auto;
+        }
+
+        /* Animation */
+        .feature {
+        animation: animated-text 4s steps(40,end) 1s 1 normal both,
+                    animated-cursor 600ms steps(29,end) infinite;
+        }
+
+        /* text animation */
+
+        @keyframes animated-text{
+        from{width: 0;}
+        to{width: 540px;}
+        }
+
+        /* cursor animations */
+
+        @keyframes animated-cursor{
+        from{border-right-color: rgba(0,255,0,.75);}
+        to{border-right-color: transparent;}
+        }
+        .about {
+            margin-top:10%
+        }
+        .compIcon {
+            margin-left:300px;
+            height:30%;
+            width: 30%;
+        }
+        .weightIcon {
+            margin-left:100px;
+            height:200px;
+            width: 200px;
+        }
+        .musicIcon {
+            margin-left:345px;
+            height:200px;
+            width: 200px;
+        }
+        .medalIcon {
+            height:40%;
+            width:40%;
+            margin-left:100px
+        }
+        .coursework {
+            margin-top:100px
+        }
+        .clubarchive {
+            height:auto;
+            width:30%;
+            margin-left: 250px
+        }
+        .mongoIcon{
+            width:100%;
+            height:auto;
+        }
+        .cssIcon{
+            width:80%;
+            height:auto
+        }
+        .nodeIcon {
+            width:80%;
+            height:auto
+        }
+        .expressIcon {
+            width:90%;
+            height:auto
+        }
+        .pythonIcon{
+            width:70%;
+            height:auto
+        }
+        .swiftIcon {
+            width:70%;
+            height:auto
+        }
+        .javaIcon {
+            width:60%;
+            height:auto
+        }
+        .cIcon{
+            width:60%;
+            height:auto
+        }
+        .gitIcon {
+            width:100px;
+            height:auto;
+            color:grey
+        }
+        
+        .gitIcon{
+            
+            margin: 15px;
+            -webkit-transition: margin 0.5s ease-out;
+            -moz-transition: margin 0.5s ease-out;
+            -o-transition: margin 0.5s ease-out;
+        }
+        
+        .gitIcon:hover {
+            margin-top: 2px;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            }
+
+            /* This container is needed to position the front and back side */
+            .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            }
+
+            /* Do an horizontal flip when you move the mouse over the flip box container */
+            .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            }
+
+            /* Position the front and back side */
+            .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            }
+
+            /* Style the front side (fallback if image is missing) */
+            .flip-card-front {
+            background-color: transparent;
+            color: black;
+            }
+
+            /* Style the back side */
+            .flip-card-back {
+                background-color: dodgerblue;
+                color: white;
+                transform: rotateY(180deg);
+            }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <div class = "main">
+        <br>
+        <h1 class = "title" style="color:white">Arvind Venkatesan</h1>
+    <!-- <ul>
+        <li style = "text-align: center;margin-left: 40%;"><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Contact Me</a></li>
+    </ul> -->
+    
+    <center><nav class = " fadeIn scrollanimation animated">
+        <a href="#about">About</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#contact">Contact</a>
+      </nav></center>
+    
+      <p class = "feature">Hey there! Welcome to my portfolio!</p> 
+    </div>
+    <br>
+    <br>
+    <h2 id ="about" style="text-align: center;">About</h2>
+    <div class = "about">
+            <div class = "row">
+                <div class = "col">
+                    <div data-aos="fade-right" style = "margin-left: 300px;" >
+                        <h2 style ="font-size: 200%;">"Once an Aggie, always an Aggie"</h4>
+                        <h3>Engineering Class of 2022</h3>
+                        <h3>Computer Science Major</h3>
+                    </div>
+                </div>
+                <div class = "col">
+                    <div data-aos="zoom-in">
+                        <img src ="TAMU.png" class="profileImg">
+                    </div>
+                </div>
+            </div>
+                
+                
+                
+                    
+                
+         
+            
+                <div class = "row" style = "margin-top:10%">
+                    <div class = "col">
+                        <div data-aos="zoom-in" class = "float:none">
+                            <img src ="computer.png" class="compIcon">
+                        </div>
+                    </div>
+                    
+                    
+                
+                    <div class = "col">
+                        <div data-aos="fade-right" style = "margin-left:100px">
+                            <h2>Certified Nerd</h2>
+                            <h4>Courses</h4>
+                            <ul>
+                                <li>Introduction to Programming and Design in C++</li>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Discrete Structures in Computing</li>
+                                <li>Programming Languages</li>
+                                <li>Computer Organization</li>
+                                <li>Multivariable Calculus</li>
+                                <li>Linear Algebra</li>
+                                <li>Differential Equations</li>                            
+                            </ul>
+                       
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+            
+            <div class = "row" style = "margin-top:10%">
+                <div class = "col">
+                    <div data-aos="zoom-in" style = "margin-left:300px;margin-top:10%">
+                        <h2>A few things im proud of</h2>
+                        <ul>
+                            <li>Honors Student</li>
+                            <li>Deans Honor Roll Recepient</li>
+                            <li>HTML Level 1 Certified</li>
+                            <li>Former Varsity Tennis Team Captain</li>
+                            <li>Top 10% for GPA for the College of Engineering</li>
+                                                       
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class = "col">
+                    <div data-aos="fade-right">
+                        <img src="medal.jpg" class = "medalIcon">
+                    </div>
+                    
+                </div>
+            </div>  
+            
+            
+    </div>
+    
+    <div class = "main" id = "projects" style = "height:100px;" >
+        <br>
+        <h1 style = "text-align :center; font-size: 40px;color: white;" >Projects</h1>
+    </div>
+    <div class = "projects" style = "margin-top:5%">
+        
+        <div class = "row" >
+            <div class = "col" style ="margin-left: 5%;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="blueLogo.png" style="width:80%;height:80%;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Club Archive</h1>
+                        <p>Third Party that handles clubs and organizations, making it easier for students to get involved!</p>
+                        <p>My Role is the Lead Full Stack Developer and Project Manager for a group of 3</p>
+                        <p>Developed using Node.Js, Express Js, HTML, CSS, and mongoDB</p>
+                        <a href="http://www.clubarchive.com" >visit the site here!</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="book.png" style="width:80%;height:80%;">
+                      </div>
+                      <div class="flip-card-back" style = "background-color: rgb(41, 42, 43);">
+                        <h4>Autonomous Driving Research using Reinforcent Learning </h1>
+                        <p>Currently assisting a Graduate Professor and PHD student as an intern</p>
+                        <p>Help with testing and analyze the machine learning algorithms that are implemented in the test cars we use</p>
+                        <p>Attended graduate level lectures to learn more of the material.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="robomaster.png" style="width:80%;height:auto;">
+                      </div>
+                      <div class="flip-card-back" style ="background-color: grey;">
+                        <h3>Robomaster Robotics</h3>
+                        <p>Worked as software developer for collegiate robotics team at TAMU</p>
+                        <p>Code was primarily in C, but our team also worked with OpenCV and TensorFlow as well.</p>
+                        <p>Team competed in international competition hosted by DJI</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="lamda.png" style="width:50%;height:auto;">
+                      </div>
+                      <div class="flip-card-back" style = "background-color: #3A6073;">
+                        <h3>Physics Equations Calculator</h3>
+                        <p>IOS application developed to help my peers and myself with physics homework</p>
+                        <p>Developed in swift on xCode</p>
+                        <p>Reached approximately 80 downloads on the IOS Appstore!</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class = "row" style = "margin-top:3%">
+            <div class = "col">
+                <center>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="howdyhack2.png" style="width:80%;height:80%;">
+                          </div>
+                          <div class="flip-card-back" style = "background-color: #3A6073;">
+                            <h3>Howdy Hack - Maroon Pages</h3>
+                            <p>Developed a website that shows all current events happening at Texas A&M at a given date and time
+                                allowing for users to filter and search as well. Application was a .NET website using C#.
+                            </p>
+                            <p>Worked primarily as frontend developer and led 2 other developers</p>
+                            <p></p>
+                            <p><a href = "https://github.com/Jessepy/HowdyHackFall2019">Check out the code here!</a></p>
+                          </div>
+                        </div>
+                    </div>
+                </center>
+                
+            </div>
+            <div class = "col">
+                <center>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="tamuhack.png" style="width:80%;height:80%;">
+                          </div>
+                          <div class="flip-card-back" style = "background-color: #3A6073;">
+                            <h3>TAMUHack - ThoughtSpace</h3>
+                            <p style = "font-size: small;">Developed a website that compiled data from muliple social media outlets
+                                and performed sentiment analysis on recent posts. This is project was mainly
+                                to raise awareness about mental health problems around the world.
+                            </p>
+                            <p>Implemented using nodeJs, ExpressJs, HTML and CSS, and API from Twitter, Spotify and Facebook</p>
+                            <p><a href = "https://github.com/varvind/TAMUHack-2020">Check out the code here!</a></p>
+                          </div>
+                        </div>
+                    </div>
+                </center>
+                
+            </div>
+        </div>
+    </div>
+    <div class = "main" style = "height:100px;margin-top:30px">
+        <br>
+        <h1 style = "text-align :center; font-size: 40px;color: white;">Skills</h1>
+    </div>
+    <div class = "skills" id="skills" style ="margin-top: 5%;">
+        <div class = "row" >
+            <div class = "col" style="margin-left:3%">
+                <img data-aos="zoom-in" class = "mongoIcon" src="mongo.png">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src = "css2.png" class = "cssIcon">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src="nodejs.png" class ="nodeIcon">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src="ExpressJS.png" class ="expressIcon">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src="python.png" class ="pythonIcon">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src="swift.png" class ="swiftIcon">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src="java.png" class ="javaIcon">
+            </div>
+            <div class="col">
+                <img data-aos="zoom-in" src="C++.png" class ="cIcon">
+            </div>
+        </div>
+    </div>
+    <div class = "main" id = "contact" style = "height:500px;margin-top:30px" >
+        <br>
+        <h1 style = "text-align :center; font-size: 40px;color: white;">Contact</h1>
+        <div data-aos="zoom-in">
+            <center><a href="https://github.com/varvind"><img src = "git.png" class = "gitIcon"></a></center>
+            <center><a href="mailto:varvind@tamu.edu"><img src = "mail.png" class = "gitIcon"></a></center>
+            <center><a href="Arvind_Venkatesan.pdf" download><img src = "resume.png" class = "gitIcon"></a></center>
+        </div>
+        
+        
+    </div>
+</body>
